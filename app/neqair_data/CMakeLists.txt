@@ -1,0 +1,12 @@
+cfdtools_add_executable(neqair_data
+  neqair_data.f90
+)
+target_link_libraries(cfdtools_neqair_data
+  cfdtools_xyzq_io
+  cfdtools_gridlib
+  cfdtools_geomlib
+  cfdtools_interplib
+  cfdtools_searchlib
+  cfdtools_numodules
+  cfdtools_progtools
+)

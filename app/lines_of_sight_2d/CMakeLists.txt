@@ -1,0 +1,17 @@
+cfdtools_add_executable(lines_of_sight_2d
+  lines_of_sight_2d.f90
+)
+target_link_libraries(cfdtools_lines_of_sight_2d
+  cfdtools_xyzq_io
+  cfdtools_interplib
+  cfdtools_numodules
+  cfdtools_progtools
+  cfdtools_adt
+  cfdtools_intrinsics
+  cfdtools_interp2d
+  cfdtools_linsys
+  cfdtools_optlib
+  cfdtools_gridlib
+  cfdtools_geomlib
+  cfdtools_searchlib
+)

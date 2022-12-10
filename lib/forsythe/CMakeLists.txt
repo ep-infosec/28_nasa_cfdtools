@@ -1,0 +1,13 @@
+cfdtools_add_library(forsythe
+  decomp.f
+  fmin.f
+  fmin77.f
+  quanc8.f
+  rkf45.f
+  seval.f
+  solve.f
+  spline.f
+  svd.f
+  urand.f
+  zeroin.f
+)

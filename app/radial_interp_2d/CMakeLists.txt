@@ -1,0 +1,12 @@
+cfdtools_add_executable(radial_interp_2d
+  radial_interp_2d.f90
+)
+target_link_libraries(cfdtools_radial_interp_2d
+  cfdtools_xyzq_io
+  cfdtools_interplib
+  cfdtools_numodules
+  cfdtools_optlib
+  cfdtools_gridlib
+  cfdtools_geomlib
+  cfdtools_searchlib
+)

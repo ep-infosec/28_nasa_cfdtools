@@ -1,0 +1,30 @@
+cfdtools_add_library(searchlib
+  asrch3d.f
+  bsrchr.f
+  hsortcc.f
+  hsortii.f
+  hsortiind.f
+  hsortri.f
+  hsortrr.f
+  insertxy.f90
+  interval.f
+  interval2.f
+  interval_i.f
+  interval_i2.f
+  merger.f
+  merger2.f
+  ripple2d.f
+  ripple2p.f
+  ripple3d.f
+  ripple_surf.f
+  ssrchr.f
+  suppress1.f90
+  suppress2.f90
+  unique_ri.f90
+  xsort.f
+)
+target_link_libraries(cfdtools_searchlib
+  PRIVATE
+    cfdtools_interp2d
+    cfdtools_interp3d
+)

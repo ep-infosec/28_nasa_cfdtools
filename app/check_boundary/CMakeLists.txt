@@ -1,0 +1,4 @@
+cfdtools_add_executable(check_boundary
+  check_boundary.f90
+)
+target_link_libraries(cfdtools_check_boundary cfdtools_xyzq_io)

@@ -1,0 +1,21 @@
+cfdtools_add_executable(hemispheres_of_sight
+  hemispheres_of_sight.f90
+)
+target_link_libraries(cfdtools_hemispheres_of_sight
+  cfdtools_triangulation_io
+  cfdtools_interp3d
+  cfdtools_numodules
+  cfdtools_progtools
+  cfdtools_adt
+  cfdtools_linsys
+  cfdtools_surface_patch_utilities
+  cfdtools_eigenlib
+  cfdtools_optlib
+  cfdtools_geomlib
+  cfdtools_gridlib
+  cfdtools_ugridlib
+  cfdtools_xyzq_io
+  cfdtools_searchlib
+  cfdtools_geomlib
+  cfdtools_intrinsics
+)

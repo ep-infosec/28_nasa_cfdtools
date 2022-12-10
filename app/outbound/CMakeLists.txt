@@ -1,0 +1,20 @@
+cfdtools_add_executable(outbound
+  outbound.f90
+  param2d.f
+  permute_block.f90
+  swap_ijk_conventions.f90
+)
+target_link_libraries(cfdtools_outbound
+  cfdtools_xyzq_io
+  cfdtools_interp3d
+  cfdtools_interplib
+  cfdtools_numodules
+  cfdtools_progtools
+  cfdtools_adt
+  cfdtools_interp2d
+  cfdtools_linsys
+  cfdtools_optlib
+  cfdtools_gridlib
+  cfdtools_geomlib
+  cfdtools_searchlib
+)

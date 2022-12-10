@@ -1,0 +1,11 @@
+cfdtools_add_executable(ensemble
+  ensemble.f90
+)
+target_link_libraries(cfdtools_ensemble
+    cfdtools_intrinsics
+    cfdtools_tecplot_adt
+    cfdtools_tecplot_gridlib
+    cfdtools_tecplot_io
+    cfdtools_tecplot_surface_patch_utilities
+    cfdtools_progtools
+)

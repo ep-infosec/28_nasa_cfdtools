@@ -1,0 +1,9 @@
+cfdtools_add_executable(surface_quadrature
+    surface_quadrature.f90
+)
+target_link_libraries(cfdtools_surface_quadrature
+    cfdtools_geomlib
+    cfdtools_integratelib
+    cfdtools_progtools
+    cfdtools_tecplot_io
+)

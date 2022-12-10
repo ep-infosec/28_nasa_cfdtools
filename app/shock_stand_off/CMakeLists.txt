@@ -1,0 +1,14 @@
+cfdtools_add_executable(shock_stand_off
+  shock_stand_off.f90
+)
+target_link_libraries(cfdtools_shock_stand_off
+  cfdtools_xyzq_io
+  cfdtools_interp3d
+  cfdtools_numodules
+  cfdtools_adt
+  cfdtools_linsys
+  cfdtools_optlib
+  cfdtools_gridlib
+  cfdtools_geomlib
+  cfdtools_searchlib
+)

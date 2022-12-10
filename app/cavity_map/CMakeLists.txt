@@ -1,0 +1,20 @@
+cfdtools_add_executable(cavity_map
+  cavity_map.f90
+  rotation_matrix.f90
+)
+target_link_libraries(cfdtools_cavity_map
+  cfdtools_interp3d
+  cfdtools_interplib
+  cfdtools_intrinsics
+  cfdtools_numodules
+  cfdtools_progtools
+  cfdtools_tecplot_adt
+  cfdtools_tecplot_io
+  cfdtools_tecplot_gridlib
+  cfdtools_tecplot_surface_patch_utilities
+  cfdtools_linsys
+  cfdtools_eigenlib
+  cfdtools_optlib
+  cfdtools_geomlib
+  cfdtools_searchlib
+)

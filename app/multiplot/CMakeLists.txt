@@ -1,0 +1,10 @@
+cfdtools_add_executable(multiplot
+  bounds.f
+  intrinsics.f
+  multiplot.f
+  psutil.f
+)
+target_link_libraries(cfdtools_multiplot
+  cfdtools_intrinsics
+  cfdtools_ugridlib
+)

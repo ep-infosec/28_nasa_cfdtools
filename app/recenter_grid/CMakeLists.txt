@@ -1,0 +1,4 @@
+cfdtools_add_executable(recenter_grid
+  recenter_grid.f90
+)
+target_link_libraries(cfdtools_recenter_grid cfdtools_xyzq_io)

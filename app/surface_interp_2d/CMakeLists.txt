@@ -1,0 +1,10 @@
+cfdtools_add_executable(surface_interp_2d
+  surface_interp_2d.f90
+)
+target_link_libraries(cfdtools_surface_interp_2d
+  cfdtools_progtools
+  cfdtools_linsys
+  cfdtools_tecplot_io
+  cfdtools_tecplot_adt
+  cfdtools_geomlib
+)

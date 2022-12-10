@@ -1,0 +1,12 @@
+cfdtools_add_executable(distribute
+  distribute.f
+  shockgrid.f
+)
+target_link_libraries(cfdtools_distribute
+  cfdtools_numodules
+  cfdtools_interplib
+  cfdtools_progtools
+  cfdtools_optlib
+  cfdtools_gridlib
+  cfdtools_searchlib
+)

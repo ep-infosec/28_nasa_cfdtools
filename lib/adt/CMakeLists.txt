@@ -1,0 +1,9 @@
+cfdtools_add_library(adt
+  adt_utilities.f90
+)
+target_link_libraries(cfdtools_adt
+  PRIVATE
+    cfdtools_geomlib
+  PUBLIC
+    cfdtools_grid_block_structure
+)

@@ -1,0 +1,9 @@
+cfdtools_add_executable(interp_1d
+  interp_1d.f
+)
+target_link_libraries(cfdtools_interp_1d
+  cfdtools_numodules
+  cfdtools_searchlib
+  cfdtools_linsys
+  cfdtools_interplib
+)

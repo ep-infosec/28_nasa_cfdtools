@@ -1,0 +1,11 @@
+cfdtools_add_executable(surface_curvature
+  surface_curvature.f90
+)
+target_link_libraries(cfdtools_surface_curvature
+  cfdtools_numodules
+  cfdtools_progtools
+  cfdtools_tecplot_io
+  cfdtools_tecplot_gridlib
+  cfdtools_tecplot_xyzq_io
+  cfdtools_geomlib
+)

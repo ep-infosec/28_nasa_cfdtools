@@ -1,0 +1,14 @@
+cfdtools_add_executable(cones_of_sight
+  cones_of_sight.f90
+)
+target_link_libraries(cfdtools_cones_of_sight
+  cfdtools_xyzq_io
+  cfdtools_interp3d
+  cfdtools_numodules
+  cfdtools_adt
+  cfdtools_linsys
+  cfdtools_optlib
+  cfdtools_geomlib
+  cfdtools_searchlib
+  cfdtools_intrinsics
+)

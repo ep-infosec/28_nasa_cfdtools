@@ -1,0 +1,10 @@
+cfdtools_add_executable(interp_columns
+  interp_columns.f90
+)
+target_link_libraries(cfdtools_interp_columns
+  cfdtools_numodules
+  cfdtools_interplib
+  cfdtools_progtools
+  cfdtools_linsys
+  cfdtools_searchlib
+)

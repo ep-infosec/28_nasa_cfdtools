@@ -1,0 +1,19 @@
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+   program makelist
+!
+!     Make a list of integers, probably for entering to another program, or
+!     inserting ordinals as a column in a dataset.  (See utility COLUMNEDIT
+!     for doing that.)
+!
+!  History:
+!
+!     07/23/04  David Saunders  Original simple utility (output to screen).
+!     01/06/21    "      "      Send the list to a file unless it's fairly
+!                               short, when cutting and pasting is easy.
+!
+!  Author:
+!     David Saunders, ELORET/NASA Ames Research Center.
+!                     Now with AMA, Inc. at NASA Ames.
+!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!

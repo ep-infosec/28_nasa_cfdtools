@@ -1,0 +1,4 @@
+cfdtools_add_executable(running_statistics
+  running_statistics.f90
+)
+target_link_libraries(cfdtools_running_statistics cfdtools_numodules)

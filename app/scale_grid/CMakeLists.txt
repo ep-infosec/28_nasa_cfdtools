@@ -1,0 +1,9 @@
+cfdtools_add_executable(scale_grid
+  scale_grid.f
+  second.f
+)
+target_link_libraries(cfdtools_scale_grid
+  cfdtools_progtools
+  cfdtools_geomlib
+  cfdtools_xyzq_io
+)

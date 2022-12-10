@@ -1,0 +1,26 @@
+cfdtools_add_library(ugridlib
+  cut_triangles.f
+  cutorder.f
+  cutorder_nf.f
+  cutsurf.f
+  cutsurf_nf.f
+  cutsurfi.f
+  cutsurfi_nf.f
+  nonlinear_tri_interp.f90
+  search_tri_2d.f90
+  solid_angle_quadrature_3.f90
+  solid_angle_tri.f90
+  spherical_triangulation.f90
+  testtet.f
+  tet_coefs.f
+  tet_volumes.f90
+  tri_areas.f90
+  tri_centers_to_vertices.f90
+  tri_coefs.f
+  triangulate_patches.f
+)
+target_link_libraries(cfdtools_ugridlib
+  PRIVATE
+    cfdtools_intrinsics
+    cfdtools_triangulation_io
+)

@@ -1,0 +1,13 @@
+cfdtools_add_executable(integrate
+  integrate.f
+)
+target_link_libraries(cfdtools_integrate
+  cfdtools_geomlib
+  cfdtools_integratelib
+  cfdtools_linsys
+  cfdtools_progtools
+  cfdtools_numodules
+  cfdtools_obsolete
+  cfdtools_searchlib
+  cfdtools_table_io
+)

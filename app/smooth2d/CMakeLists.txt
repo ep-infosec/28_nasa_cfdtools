@@ -1,0 +1,16 @@
+cfdtools_add_executable(smooth2d
+  dummies.f
+  rdtable.f
+  second.f
+  smooth2d.f
+)
+target_link_libraries(cfdtools_smooth2d
+  cfdtools_interplib
+  cfdtools_numodules
+  cfdtools_progtools
+  cfdtools_interp2d
+  cfdtools_linsys
+  cfdtools_gridlib
+  cfdtools_geomlib
+  cfdtools_searchlib
+)

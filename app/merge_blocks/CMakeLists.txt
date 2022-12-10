@@ -1,0 +1,8 @@
+cfdtools_add_executable(merge_blocks
+  merge_blocks.f90
+)
+cfdtools_add_executable(merge_blocks_with_halos
+  merge_blocks_with_halos.f90
+)
+target_link_libraries(cfdtools_merge_blocks cfdtools_progtools)
+target_link_libraries(cfdtools_merge_blocks_with_halos cfdtools_progtools)

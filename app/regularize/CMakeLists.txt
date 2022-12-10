@@ -1,0 +1,9 @@
+cfdtools_add_executable(regularize
+  regularize.f
+)
+target_link_libraries(cfdtools_regularize
+  cfdtools_progtools
+  cfdtools_interplib
+  cfdtools_searchlib
+  cfdtools_numodules
+)

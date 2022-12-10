@@ -1,0 +1,21 @@
+cfdtools_add_executable(capsule_grid
+  capsule_grid.f90
+  capsules.f90
+  grid_block_structure.f90
+)
+target_link_libraries(cfdtools_capsule_grid
+  cfdtools_interp3d
+  cfdtools_interplib
+  cfdtools_numodules
+  cfdtools_progtools
+  cfdtools_adt
+  cfdtools_linsys
+  cfdtools_grid_block_utilities
+  cfdtools_surface_patch_utilities
+  cfdtools_gridlib
+  cfdtools_optlib
+  cfdtools_xyzq_io
+  cfdtools_searchlib
+  cfdtools_geomlib
+  cfdtools_intrinsics
+)

@@ -1,0 +1,18 @@
+cfdtools_add_executable(maxmin
+  dummies.f
+  maxmin.f
+  second.f
+)
+target_link_libraries(cfdtools_maxmin
+  cfdtools_interp3d
+  cfdtools_numodules
+  cfdtools_interplib
+  cfdtools_progtools
+  cfdtools_linsys
+  cfdtools_obsolete
+  cfdtools_optlib
+  cfdtools_gridlib
+  cfdtools_forsythe
+  cfdtools_geomlib
+  cfdtools_searchlib
+)

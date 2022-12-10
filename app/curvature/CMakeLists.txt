@@ -1,0 +1,13 @@
+cfdtools_add_executable(curvature
+  curvature.f
+)
+target_link_libraries(cfdtools_curvature
+  cfdtools_interp3d
+  cfdtools_interplib
+  cfdtools_numodules
+  cfdtools_progtools
+  cfdtools_linsys
+  cfdtools_gridlib
+  cfdtools_geomlib
+  cfdtools_searchlib
+)

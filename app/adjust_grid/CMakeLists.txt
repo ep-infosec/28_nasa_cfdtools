@@ -1,0 +1,10 @@
+cfdtools_add_executable(adjust_grid
+  adjust_grid.f90
+)
+target_link_libraries(cfdtools_adjust_grid
+  cfdtools_grid_block_structure
+  cfdtools_gridlib
+  cfdtools_progtools
+  cfdtools_geomlib
+  cfdtools_xyzq_io
+)

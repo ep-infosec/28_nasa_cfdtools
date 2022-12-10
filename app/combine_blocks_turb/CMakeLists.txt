@@ -1,0 +1,9 @@
+cfdtools_add_executable(combine_blocks_turb
+  combine_blocks_turb.f90
+)
+target_link_libraries(cfdtools_combine_blocks_turb
+  cfdtools_adt
+  cfdtools_linsys
+  cfdtools_geomlib
+  cfdtools_xyzq_io
+)

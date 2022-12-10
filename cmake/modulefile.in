@@ -1,0 +1,12 @@
+#%Module1.0
+module-whatis Adds CFDTOOLS @cfdtools_VERSION@ programs to environment
+
+conflict cfdtools
+
+set root @CMAKE_INSTALL_PREFIX@
+
+# Configure the environment
+setenv        CFDTOOLS_ROOT      $root
+setenv        CFDTOOLS_VERSION   @cfdtools_VERSION@
+prepend-path  PATH               $root/bin
+prepend-path  CMAKE_PREFIX_PATH  $root

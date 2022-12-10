@@ -1,0 +1,4 @@
+cfdtools_add_executable(project_to_sphere
+  project_to_sphere.f90
+)
+target_link_libraries(cfdtools_project_to_sphere cfdtools_xyzq_io)

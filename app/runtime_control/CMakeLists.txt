@@ -1,0 +1,4 @@
+cfdtools_add_executable(runtime_control
+  runtime.f90
+)
+target_link_libraries(cfdtools_runtime_control cfdtools_progtools)

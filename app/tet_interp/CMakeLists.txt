@@ -1,0 +1,14 @@
+cfdtools_add_executable(tet_interp
+  tet_interp.f90
+)
+target_link_libraries(cfdtools_tet_interp
+  cfdtools_triangulation_io
+  cfdtools_interp3d
+  cfdtools_progtools
+  cfdtools_adt
+  cfdtools_linsys
+  cfdtools_eigenlib
+  cfdtools_gridlib
+  cfdtools_xyzq_io
+  cfdtools_geomlib
+)

@@ -1,0 +1,10 @@
+cfdtools_add_executable(plug_interp
+  plug_interp.f90
+)
+target_link_libraries(cfdtools_plug_interp
+  cfdtools_geomlib
+  cfdtools_interplib
+  cfdtools_searchlib
+  cfdtools_numodules
+  cfdtools_xyzq_io
+)

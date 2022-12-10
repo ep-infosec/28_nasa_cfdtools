@@ -1,0 +1,9 @@
+cfdtools_add_executable(anchor
+  anchor.f90
+)
+target_link_libraries(cfdtools_anchor
+  cfdtools_linsys
+  cfdtools_numodules
+  cfdtools_optinterp
+  cfdtools_progtools
+)

@@ -1,0 +1,9 @@
+cfdtools_add_executable(rectify_grid
+  rectify_grid.f90
+)
+target_link_libraries(cfdtools_rectify_grid
+  cfdtools_gridlib
+  cfdtools_progtools
+  cfdtools_geomlib
+  cfdtools_xyzq_io
+)

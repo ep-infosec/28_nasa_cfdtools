@@ -1,0 +1,19 @@
+cfdtools_add_executable(blayer_results
+  blayer_results.f90
+)
+target_link_libraries(cfdtools_blayer_results
+  cfdtools_global
+  cfdtools_geomlib
+  cfdtools_integratelib
+  cfdtools_interplib
+  cfdtools_linsys
+  cfdtools_numodules
+  cfdtools_progtools
+  cfdtools_searchlib
+  cfdtools_optlib
+  cfdtools_tecplot_gridlib
+  cfdtools_tecplot_adt
+  cfdtools_tecplot_io
+  cfdtools_tecplot_xyzq_io
+  cfdtools_tile_triangulation
+)

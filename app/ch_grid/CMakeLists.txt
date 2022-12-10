@@ -1,0 +1,18 @@
+cfdtools_add_executable(ch_grid
+  ch_grid.f
+  second.f
+)
+target_link_libraries(cfdtools_ch_grid
+  cfdtools_interp3d
+  cfdtools_interplib
+  cfdtools_integratelib
+  cfdtools_intrinsics
+  cfdtools_numodules
+  cfdtools_progtools
+  cfdtools_interp2d
+  cfdtools_linsys
+  cfdtools_optlib
+  cfdtools_gridlib
+  cfdtools_geomlib
+  cfdtools_searchlib
+)

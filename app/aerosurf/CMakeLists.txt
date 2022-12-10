@@ -1,0 +1,18 @@
+cfdtools_add_executable(aerosurf
+  aerosurf.f
+  second.f
+  surfer.f
+  synch.f
+)
+target_link_libraries(cfdtools_aerosurf
+  cfdtools_interp3d
+  cfdtools_interplib
+  cfdtools_numodules
+  cfdtools_progtools
+  cfdtools_interp2d
+  cfdtools_linsys
+  cfdtools_optlib
+  cfdtools_gridlib
+  cfdtools_geomlib
+  cfdtools_searchlib
+)

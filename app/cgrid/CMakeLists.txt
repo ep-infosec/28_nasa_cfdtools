@@ -1,0 +1,11 @@
+cfdtools_add_executable(cgrid
+  cgrid.f
+)
+target_link_libraries(cfdtools_cgrid
+  cfdtools_gridlib
+  cfdtools_interplib
+  cfdtools_searchlib
+  cfdtools_optlib
+  cfdtools_geomlib
+  cfdtools_numodules
+)

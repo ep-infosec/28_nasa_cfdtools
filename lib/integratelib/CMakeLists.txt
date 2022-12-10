@@ -1,0 +1,17 @@
+cfdtools_add_library(integratelib
+  avint.f
+  csquad.f
+  fsquad.f
+  lcsareas.f
+  lcsquad.f
+  msquad.f
+  quanc8rc.f
+  sctrpz.f
+  trapezoidal_quadrature_2d.f
+  trapezoidal_quadrature_3d.f90
+)
+target_link_libraries(cfdtools_integratelib
+  PRIVATE
+    cfdtools_table_io
+    cfdtools_interplib
+)

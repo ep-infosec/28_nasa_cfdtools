@@ -1,0 +1,17 @@
+cfdtools_add_executable(hb_grid
+  hb_grid.f
+  smooth1d.f
+  capsules.f90
+)
+target_link_libraries(cfdtools_hb_grid
+  cfdtools_gridlib
+  cfdtools_interplib
+  cfdtools_interp2d
+  cfdtools_geomlib
+  cfdtools_gridlib
+  cfdtools_optlib
+  cfdtools_linsys
+  cfdtools_searchlib
+  cfdtools_numodules
+  cfdtools_intrinsics
+)

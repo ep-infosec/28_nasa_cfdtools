@@ -1,0 +1,10 @@
+cfdtools_add_executable(sort_surface_slice
+  sort_surface_slice.f90
+)
+target_link_libraries(cfdtools_sort_surface_slice
+  cfdtools_numodules
+  cfdtools_progtools
+  cfdtools_ugridlib
+  cfdtools_geomlib
+  cfdtools_searchlib
+)

@@ -1,0 +1,10 @@
+cfdtools_add_executable(triangulation_tool
+  triangulation_tool.f90
+)
+target_link_libraries(cfdtools_triangulation_tool
+  cfdtools_triangulation_io
+  cfdtools_interp3d
+  cfdtools_progtools
+  cfdtools_eigenlib
+  cfdtools_geomlib
+)

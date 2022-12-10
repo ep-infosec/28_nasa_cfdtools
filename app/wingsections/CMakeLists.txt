@@ -1,0 +1,12 @@
+cfdtools_add_executable(wingsections
+  wingsections.f
+)
+target_link_libraries(cfdtools_wingsections
+  cfdtools_interplib
+  cfdtools_integratelib
+  cfdtools_progtools
+  cfdtools_dt_nurbs
+  cfdtools_optlib
+  cfdtools_gridlib
+  cfdtools_aa_nurbs
+)

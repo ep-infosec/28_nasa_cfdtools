@@ -1,0 +1,9 @@
+cfdtools_add_executable(scan_grid
+  scan_grid.f90
+)
+target_link_libraries(cfdtools_scan_grid
+  cfdtools_gridlib
+  cfdtools_progtools
+  cfdtools_geomlib
+  cfdtools_xyzq_io
+)

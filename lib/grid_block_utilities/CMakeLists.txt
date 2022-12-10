@@ -1,0 +1,9 @@
+cfdtools_add_library(grid_block_utilities
+  grid_block_utilities.f90
+)
+target_link_libraries(cfdtools_grid_block_utilities
+  PRIVATE
+    cfdtools_xyzq_io
+  PUBLIC
+    cfdtools_grid_block_structure
+)

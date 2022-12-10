@@ -1,0 +1,13 @@
+cfdtools_add_executable(surface_patches
+  surface_patches.f90
+)
+target_link_libraries(cfdtools_surface_patches
+  cfdtools_xyzq_io
+  cfdtools_interplib
+  cfdtools_numodules
+  cfdtools_progtools
+  cfdtools_surface_patch_utilities
+  cfdtools_gridlib
+  cfdtools_geomlib
+  cfdtools_searchlib
+)
